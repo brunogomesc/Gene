@@ -1,6 +1,6 @@
 ﻿namespace Gene
 {
-    partial class Homepage
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,69 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_NovoChamado = new System.Windows.Forms.Button();
-            this.btn_ConsutarChamado = new System.Windows.Forms.Button();
-            this.btn_AtualizarChamado = new System.Windows.Forms.Button();
-            this.btn_AtualizarCadastros = new System.Windows.Forms.Button();
+            this.btn_Acessar = new System.Windows.Forms.Button();
+            this.lb_Login = new System.Windows.Forms.Label();
+            this.lb_Senha = new System.Windows.Forms.Label();
+            this.tb_Login = new System.Windows.Forms.TextBox();
+            this.tb_Senha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btn_NovoChamado
+            // btn_Acessar
             // 
-            this.btn_NovoChamado.Location = new System.Drawing.Point(115, 59);
-            this.btn_NovoChamado.Name = "btn_NovoChamado";
-            this.btn_NovoChamado.Size = new System.Drawing.Size(163, 71);
-            this.btn_NovoChamado.TabIndex = 0;
-            this.btn_NovoChamado.Text = "Novo Chamado";
-            this.btn_NovoChamado.UseVisualStyleBackColor = true;
+            this.btn_Acessar.Location = new System.Drawing.Point(334, 320);
+            this.btn_Acessar.Name = "btn_Acessar";
+            this.btn_Acessar.Size = new System.Drawing.Size(163, 71);
+            this.btn_Acessar.TabIndex = 0;
+            this.btn_Acessar.Text = "Conectar";
+            this.btn_Acessar.UseVisualStyleBackColor = true;
+            this.btn_Acessar.Click += new System.EventHandler(this.btn_Acessar_Click);
             // 
-            // btn_ConsutarChamado
+            // lb_Login
             // 
-            this.btn_ConsutarChamado.Location = new System.Drawing.Point(597, 97);
-            this.btn_ConsutarChamado.Name = "btn_ConsutarChamado";
-            this.btn_ConsutarChamado.Size = new System.Drawing.Size(163, 71);
-            this.btn_ConsutarChamado.TabIndex = 1;
-            this.btn_ConsutarChamado.Text = "Consultar Chamado";
-            this.btn_ConsutarChamado.UseVisualStyleBackColor = true;
+            this.lb_Login.AutoSize = true;
+            this.lb_Login.Location = new System.Drawing.Point(144, 117);
+            this.lb_Login.Name = "lb_Login";
+            this.lb_Login.Size = new System.Drawing.Size(48, 20);
+            this.lb_Login.TabIndex = 1;
+            this.lb_Login.Text = "Login";
             // 
-            // btn_AtualizarChamado
+            // lb_Senha
             // 
-            this.btn_AtualizarChamado.Location = new System.Drawing.Point(115, 233);
-            this.btn_AtualizarChamado.Name = "btn_AtualizarChamado";
-            this.btn_AtualizarChamado.Size = new System.Drawing.Size(163, 71);
-            this.btn_AtualizarChamado.TabIndex = 2;
-            this.btn_AtualizarChamado.Text = "Atualizar Chamado";
-            this.btn_AtualizarChamado.UseVisualStyleBackColor = true;
+            this.lb_Senha.AutoSize = true;
+            this.lb_Senha.Location = new System.Drawing.Point(144, 198);
+            this.lb_Senha.Name = "lb_Senha";
+            this.lb_Senha.Size = new System.Drawing.Size(64, 20);
+            this.lb_Senha.TabIndex = 2;
+            this.lb_Senha.Text = "Senha: ";
             // 
-            // btn_AtualizarCadastros
+            // tb_Login
             // 
-            this.btn_AtualizarCadastros.Location = new System.Drawing.Point(597, 279);
-            this.btn_AtualizarCadastros.Name = "btn_AtualizarCadastros";
-            this.btn_AtualizarCadastros.Size = new System.Drawing.Size(163, 71);
-            this.btn_AtualizarCadastros.TabIndex = 3;
-            this.btn_AtualizarCadastros.Text = "Atualizar Cadastros";
-            this.btn_AtualizarCadastros.UseVisualStyleBackColor = true;
+            this.tb_Login.Location = new System.Drawing.Point(236, 117);
+            this.tb_Login.Name = "tb_Login";
+            this.tb_Login.Size = new System.Drawing.Size(172, 26);
+            this.tb_Login.TabIndex = 3;
             // 
-            // Homepage
+            // tb_Senha
+            // 
+            this.tb_Senha.Location = new System.Drawing.Point(236, 195);
+            this.tb_Senha.Name = "tb_Senha";
+            this.tb_Senha.Size = new System.Drawing.Size(172, 26);
+            this.tb_Senha.TabIndex = 4;
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 450);
-            this.Controls.Add(this.btn_AtualizarCadastros);
-            this.Controls.Add(this.btn_AtualizarChamado);
-            this.Controls.Add(this.btn_ConsutarChamado);
-            this.Controls.Add(this.btn_NovoChamado);
-            this.Name = "Homepage";
+            this.ClientSize = new System.Drawing.Size(582, 450);
+            this.Controls.Add(this.tb_Senha);
+            this.Controls.Add(this.tb_Login);
+            this.Controls.Add(this.lb_Senha);
+            this.Controls.Add(this.lb_Login);
+            this.Controls.Add(this.btn_Acessar);
+            this.Name = "Login";
             this.Text = "Gene - Gerenciador de Demandas";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_NovoChamado;
-        private System.Windows.Forms.Button btn_ConsutarChamado;
-        private System.Windows.Forms.Button btn_AtualizarChamado;
-        private System.Windows.Forms.Button btn_AtualizarCadastros;
+        private System.Windows.Forms.Button btn_Acessar;
+        private System.Windows.Forms.Label lb_Login;
+        private System.Windows.Forms.Label lb_Senha;
+        private System.Windows.Forms.TextBox tb_Login;
+        private System.Windows.Forms.TextBox tb_Senha;
     }
 }
 
